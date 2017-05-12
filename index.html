@@ -1,0 +1,400 @@
+<html>
+<head>
+<title>HTML CG Page Redo</title>
+<style>
+html,body{height:100%;}
+a{
+text-decoration:none;
+}
+a:hover{
+color:#FEF1D3;
+background:#312F74;
+-webkit-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+th,td{
+border-top:4px solid #a7a0ab;
+border-bottom:4px solid #a7a0ab;
+}
+body{margin:0px;}
+
+.header1{
+position:abolute;
+top:0;
+left:0;
+width:100%;
+min-height:80px;
+background:-webkit-linear-gradient(left ,rgb(232, 240, 209) 0%, rgb(251, 241, 211) 50%);
+}
+.headerImage{
+height:40px;
+width:auto;
+float:left;
+padding-top:10px;
+padding-left:10px;
+}
+.menu{
+height:45px;
+width:500px;
+float:right;
+padding-right:220px;
+padding-top:10px;
+}
+.menu_cell{
+font: 16px arial, sans-serif;
+text-align:center;
+float:left;
+width:20%;
+}
+.menu_cell a:hover .overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:#312F74;
+-webkit-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+.menu_cell a{
+color:#312F74;
+width:100%;
+height:100%;
+display:block;
+padding-top:8px;
+padding-bottom:8px;
+}
+.menu_cell a:hover{
+color:#FEF1D3;
+}
+#menu_homepage_cell{
+color:#FEF1D3;
+background:#a7a0ab;
+padding-left:40px;
+padding-right:40px;
+}
+#menu_about_cell{
+color: #312f88;
+padding-left:40px;
+padding-right:40px;
+position: relative;
+display: inline-block;
+}
+.dropdown-container{
+position:relative;
+display: inline-block;
+left:-100px;
+top:11px;
+}
+.dropdown-content {
+display: none;
+text-align:center;
+position: absolute;
+overflow:visible;
+background-color: #f9f9f9;
+min-width:200px;
+opacity:0.75;
+z-index:9;
+}
+.dropdown-cell{
+position:relative;
+}
+.dropdown-cell a{
+padding-top:8px;
+padding-bottom:8px;
+display: block;
+}
+#menu_about_cell:hover .dropdown-content {
+display: block;
+-webkit-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+#menu_table{
+-webkit-border-horizontal-spacing:0px;
+}
+.banner {
+background-image:url("http://pre06.deviantart.net/24ae/th/pre/i/2017/132/5/7/xirritationsigned_1600w_by_chateaugrief-db8zu2a.jpg");
+background-repeat:no-repeat;
+background-size:100% 150%;
+background-attachment:fixed;
+background-position:center 15%; 
+width:100%;
+height:700px;
+}
+#parallaxTwo{
+position:relative;
+overflow:hidden;
+}
+/* FEATURE GRID START*/
+.content {
+float:bottom;
+padding-top:35%;
+width:50%;
+margin:auto;
+background:transparent;
+position: relative;
+z-index: 1;
+display:block;
+}
+.content:after{
+content:"";
+display:table;
+clear:both;
+}
+.thumb{
+background:#FEF1D3;
+opacity:0.5;
+width:200px;
+height:150px;
+}
+.feature-grid{
+height:200px;
+background-color:rgba(255,0,0,.0);
+display:block;
+}
+.feature-grid .feat .title-wrap {
+color:#002160;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+text-align: center;
+display: block;
+}
+
+.feature-grid .feat .title-wrap:before {
+content: '';
+display: inline-block;
+height: 100%;
+vertical-align: bottom;
+margin-right: -0.25em;
+}
+
+.feature-grid .feat{
+float:left;
+position:relative;
+padding:0;
+width:33.33%;
+}
+.feature-grid .feat .overlay{
+overflow:hidden;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:rgb(60, 227, 207);
+opacity:0;
+-webkit-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+.feat a:hover .overlay{
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+opacity:1;
+}
+.feat a:hover .overlay img{
+display:block;
+width: 100%;
+height:auto;
+opacity:1;
+}
+.feature-grid .feat .title {
+display: inline-block;
+vertical-align: bottom;
+max-width: 90%;
+font-family: Arial;
+font-size: 25px;
+line-height: 1.6em;
+box-sizing: border-box;
+}
+.feature-grid .feat a:hover .title-wrap{
+color: #FEF1D3;
+display:block;
+}
+	  /*END FEATURE GRID*/
+	  
+.footer{
+width:100%;
+height:160px;
+background:-webkit-linear-gradient(left ,rgb(232, 240, 209) 0%, rgb(251, 241, 211) 50%);
+}	
+.copyright{
+color:#312f88;
+display:block;
+}
+.endTable{
+height:30px;
+width:300px;
+float:left;
+padding-left:350px;
+padding-top:5px;
+position:relative;
+top:-40px;
+display:inline-block;
+} 	
+.endTable td{
+border:0;
+}  
+.endTableCell{
+padding-left:20px;
+padding-right:20px;
+padding-top:5px;
+padding-bottom:5px;
+}
+.endTableCell a{
+padding-left:30px;
+padding-right:30px;
+padding-top:5px;
+padding-bottom:5px;
+display:block;
+}
+
+.endTableCell a:hover{
+background:#1ed9ca;
+opacity:0.5;
+-webkit-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+
+.socialIcons{
+position:relative;
+top:-25px;
+float:right;
+text-align:left;
+margin-right:250px;
+}
+.icon{
+border-top:0px solid #a7a0ab; 
+border-bottom:0px solid #a7a0ab;
+float:left;
+height:15px;
+width:15px;
+}
+.credit{
+border-top:0px solid #a7a0ab; 
+border-bottom:0px solid #a7a0ab;
+font:8px Ariel sans-serif;
+color:gray;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(window).bind('scroll',function(e){
+    	parallaxScroll();
+    });
+    /* Scroll the background layers */
+function parallaxScroll(){
+	var scrolled = $(window).scrollTop();
+	$('#parallaxTwo').css('background-size',(100+(scrolled*.05))+'% '+(150+(scrolled*.08))+'%');
+}          
+});
+</script>
+</head>
+
+<body bgcolor="#3e3e3e" background = "http://pre15.deviantart.net/ea4b/th/pre/f/2015/317/0/a/daboxbackg_by_chateaugrief-d9gkt46.jpg" text="#000000" link="#444444" vlink="#555555" alink="#666666"	>
+
+<div class=header1>
+<img class=headerImage src="http://orig02.deviantart.net/d581/f/2017/132/d/a/cglicenseplateletterpressheader300w_by_chateaugrief-db8zuer.png" style="padding-left:160px;">
+<img class=headerImage src="http://orig02.deviantart.net/5344/f/2015/204/3/9/daavatar50px_by_chateaugrief-d92jtwb.png">
+<div class=menu>
+<table id="menu_table" cellspacing="0" cellpadding="0"><tr>
+<td class=menu_cell id="menu_homepage_cell">Home</td>
+<!--<div class=dropdown>-->
+<td class=menu_cell id="menu_about_cell">About
+	<div class=dropdown-container>
+		<div class=dropdown-content>
+			<div class=dropdown-cell><a href="ChateauGriefIndexA.html">Synopsis</a></div>
+			<div class=dropdown-cell><a href="ChateauGriefIndexB.html">Characters</a></div>
+			<div class=dropdown-cell><a href="ChateauGriefIndexC.html">Why This Weirdness?</a></div>
+		</div>
+	</div>
+</td>
+<td class=menu_cell><a href="ChateauGriefIndex.html">Comic</a></td>
+<td class=menu_cell><a href="ChateauGriefIndex.html">Art</a></td>
+<td class=menu_cell><a href="ChateauGriefIndex.html">Blog</a></td>
+
+</tr></table>
+</div>
+</div>
+
+<div id="parallaxTwo" class=banner>
+<!--FEATURE GRID-->
+	<div class="content">
+	<div class="feature-grid">
+		<article id="feat1" class="feat" width=25%>
+		<a href="ChateauGriefAbout.html" title="Newest!">
+		<div class="thumb"></div>
+		<div class="overlay"><img src="http://orig11.deviantart.net/4050/f/2017/132/f/7/cgiconmaster_80_by_chateaugrief-db8zumv.jpg" border=0px></div>
+		<div class="title-wrap"><h2 class="title">Newest!</h2></div>
+			</a>
+		</article>
+		
+		<article id="feat2" class="feat" width=25%>
+			<a href="ChateauGriefIndex.html" title="Archive">
+			<div class="thumb"></div>
+			<div class="overlay"><img src="http://orig01.deviantart.net/c1b2/f/2017/132/e/2/cgiconmaster_50_by_chateaugrief-db8zupz.jpg" border=0px></div>
+			<div class="title-wrap"><h2 class="title">Archive</h2></div>
+			</a>
+		</article>
+		
+		<article id="feat3" class="feat" width=25%>
+			<a href="DeviantArtDailies/CG.C2.2.1280w.png" title="Blog">
+				<div class="thumb"></div>
+				<div class="overlay"><img src="http://orig07.deviantart.net/b943/f/2017/132/2/f/cgiconmaster_93_by_chateaugrief-db8zute.jpg" border=0px></div>
+				<div class="title-wrap"><h2 class="title">Blog</h2></div>
+				</a>
+		</article>
+		
+	</div>
+	</div>
+	<!--END FEATURE GRID-->
+</div>
+<!--END BANNER-->
+
+<!--START FOOTER-->
+
+<div class=footer>
+<div class=copyright style="height:40px;padding-top:10px;">
+<img class=headerImage src="http://orig02.deviantart.net/d581/f/2017/132/d/a/cglicenseplateletterpressheader300w_by_chateaugrief-db8zuer.png" style="padding-left:160px;height:30px;"></div>
+<div class=copyright style="padding-left:160px;">By Jean Guillet &copy 2016</div>
+
+<table class=endTable>
+<tr>
+<td class=endTableCell><a href="#blank">Home</a></td>
+<td class=endTableCell><a href="#blank">Contact</a></td>
+</tr>
+</table>
+
+<table class=socialIcons>
+<tr>
+<td class=icon><a href="#blank"><img src="http://orig04.deviantart.net/6dcd/f/2016/132/6/f/pastel_social_icon__da__by_gasara-da28dws.gif"></a></td>
+<td class=icon><a href="#blank"><img src="http://orig14.deviantart.net/33bf/f/2016/132/3/f/pastel_social_icon__tumblr__by_gasara-da28dwn.gif"></a></td>
+<td class=icon><a href="#blank"><img src="http://orig05.deviantart.net/6fee/f/2016/132/5/c/pastel_social_icon__twitter__by_gasara-da28dx4.gif"></a></td>
+<td class=icon><a href="#blank"><img src="http://orig12.deviantart.net/4645/f/2016/132/3/8/pastel_social_icon__youtube__by_gasara-da28dwr.gif"></a></td>
+<td class=icon><a href="#blank"><img src="http://orig03.deviantart.net/644f/f/2016/132/7/3/pastel_social_icon__pinterest__by_gasara-da28dwb.gif"></a></td>
+<td class=icon><a href="#blank"><img src="http://orig14.deviantart.net/28bb/f/2016/132/b/c/pastel_social_icon__facebook__by_gasara-da28dx8.gif"></a></td>
+<td class=icon><a href="#blank"><img src="http://orig14.deviantart.net/c4af/f/2016/132/b/2/pastel_social_icon__instagram__by_gasara-da28dwx.gif"></a></td>
+<td class=credit>Social icons by <a href="#blank">Gasara</a></td>
+</tr>
+</table>
+
+</div>
+
+<!--END FOOTER-->
+
+
+
+</body>
+
+</html>
